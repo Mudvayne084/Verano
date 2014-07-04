@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(
+                    function() {
+                        //alert('Hola JavaScript');
+                        alert($('#elemento1').css('fontSize'));
+                        $('#elemento1').css('fontSize', '100px');
+                        alert($('#elemento1').css('fontSize'));
+                        $('#elemento1').hide('slow');
+                        $('#elemento1').show('slow');
+                        $('.parrafo').click(
+                                function() {
+                                    $(this).hide('slow');
+                                }
+                        );
+                        alert($('.1').css('fontSize'));
+                        $('.1').css('fontSize', '300px');
+
+                        $('#boton').click(
+                                function() {
+                                    alert($('#input1').val());
+                                }
+
+                        );
+                
+              
+                
+                $('#boton3').click(
+                                function() {
+                                    alert(parseInt($('#x').val()) + parseInt($('#y').val()));
+                                    //alert(('ksadjksa'));
+                                }
+
+                        );
+
+                    }
+                            
+                            
+            );
+        </script>
+
+    </head>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <button id="boton3">Resultado</button>
+
+    
+    <body>
+        <div id="container" class="elemento2">
+            <h1>
+                <p class="parrafo" id="elemento1">Texto</p>
+            </h1>
+        </div>
+        <div>
+            <h1 class="1">Hola</h1>
+            <!--<h2 class="titulo">Mundo</h2>-->
+        </div>
+    </body>
+</html>
